@@ -291,7 +291,7 @@
                 autocapitalize="off"
                 spellcheck="false"
             >
-            <div class="format-hint">Формат: WFP-SOC-XXXXXXXX-XXXXXXXXXXXXX</div>
+            <div class="format-hint">Формат: WFP-XXX-XXXXXXXX-XXXXXXXXXXXXX</div>
         </div>
 
         <button id="telegramBtn" class="telegram-btn">
@@ -328,7 +328,7 @@
         const telegramBtn = document.getElementById('telegramBtn');
 
         // Виправлений регулярний вираз для перевірки формату ID (остання частина 13 символів)
-        const idPattern = /^WFP-SOC-\d+-[a-f0-9]+$/i;
+        const idPattern = /^WFP-[A-Z]+-\d+-[a-z0-9]+$/i;
 
         function formatInput(value) {
             // Видаляємо всі символи окрім букв, цифр та дефісів
