@@ -328,7 +328,7 @@
         const telegramBtn = document.getElementById('telegramBtn');
 
         // Виправлений регулярний вираз для перевірки формату ID (остання частина 13 символів)
-        const idPattern = /^WFP-[A-Z]+-\d+-[a-z0-9]+$/i;
+        const idPattern = /^WFP-[A-Z]{2,6}-\d{5,10}-[a-z0-9]{8,20}$/i;
 
         function formatInput(value) {
             // Видаляємо всі символи окрім букв, цифр та дефісів
@@ -430,3 +430,4 @@
     </script>
 </body>
 </html>
+Можешь тогда исправить код что бы всё работало и выглядило правильно
